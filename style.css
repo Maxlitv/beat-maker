@@ -4,7 +4,14 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
-
+body {
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
 i,
 svg {
   pointer-events: none;
@@ -18,23 +25,23 @@ svg {
   cursor: pointer;
 }
 .kick-pad {
-  background: rgb(129, 177, 149);
+  background: rgb(92, 104, 175);
 }
 .snare-pad {
-  background: rgb(161, 102, 102);
+  background: rgb(153, 88, 139);
 }
 .hihat-pad {
-  background: rgb(183, 197, 121);
+  background: rgb(189, 81, 86);
 }
 
 .kick-pad.active {
-  background: rgb(74, 172, 115);
+  background: rgb(10, 31, 149);
 }
 .snare-pad.active {
-  background: rgb(153, 69, 69);
+  background: rgb(134, 14, 108);
 }
 .hihat-pad.active {
-  background: rgb(142, 158, 70);
+  background: rgb(156, 17, 24);
 }
 
 .sequencer {
@@ -93,6 +100,25 @@ select {
 }
 .mute.active {
   background: rgb(107, 47, 47);
+}
+.tempo {
+  margin: 3rem;
+  width: 30%;
+}
+.tempo p {
+  font-size: 1.5rem;
+  margin: 2rem;
+  text-align: center;
+}
+.tempo-slider {
+  padding: 0.2rem;
+  -webkit-appearance: none;
+  margin: 1rem 0rem;
+  width: 100%;
+  position: relative;
+  background: rgb(88, 88, 88, 88);
+  cursor: pointer;
+  border-radius: 1rem;
 }
 /*animation*/
 @keyframes playTrack {
